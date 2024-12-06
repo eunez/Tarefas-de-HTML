@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de PHP</title>
+</head>
+<body>
+    <!--PHP SYNTAX-->
+<h1>Minha página em PHP</h1>
+<?php
+echo "Olá, Mundo!";
+?>
+<br>
+    <!--PHP COMMENTS-->
+<?php
+// Exibe uma mensagem de boas-vindas:
+echo "Seja bem-vindo!";
+?>
+<br>
+    <!--PHP VARIABLES-->
+<?php
+$txt = "W3Schools.com";
+echo "Eu amo estudar no $txt!";
+?>
+<br>
+    <!--PHP ECHO/PRINT-->
+<?php
+echo "<h2>PHP é interessante!</h2>";
+echo "Praticando PHP.<br>";
+echo "Esta linguagem é muito versátil.<br>";
+echo "Este ", "exemplo ", "mostra ", "o uso ", "de múltiplos parâmetros.";
+?>
+<br>
+    <!--PHP DATA TYPES-->
+<?php
+$texto = "Bem-vindo ao W3Schools!";
+$numero = 2024;
+
+var_dump($texto);
+echo "<br>";
+var_dump($numero);
+?>
+<br>
+    <!--PHP STRINGS-->
+<?php
+$nome = "Maria";
+echo "Olá $nome!";
+?>
+<br>
+    <!--PHP NUMBERS-->
+<?php
+$num1 = 15;
+$num2 = 7.5;
+$num3 = "30";
+
+var_dump($num1);
+var_dump($num2);
+var_dump($num3);
+?>
+<br>
+    <!--PHP CASTING-->
+<?php
+$valor = 20;        // Inteiro
+$pi = 3.14159;      // Float
+$mensagem = "Olá!"; // String
+$verdade = true;    // Boolean
+$nulo = null;       // NULL
+
+$valor = (float) $valor;
+$pi = (int) $pi;
+$mensagem = (int) $mensagem;
+$verdade = (int) $verdade;
+$nulo = (string) $nulo;
+
+var_dump($valor);
+var_dump($pi);
+var_dump($mensagem);
+var_dump($verdade);
+var_dump($nulo);
+?>
+<br>
+    <!--PHP MATH-->
+<?php
+echo abs(-42);
+?>
+<br>
+    <!--PHP CONSTANTS-->
+<?php
+const FAVORITE_SITE = "W3Schools.com";
+echo FAVORITE_SITE;
+?>
+<br>
+    <!--PHP Magic Constants-->
+<?php
+function mostrarArquivo() {
+    return __FILE__;
+}
+echo mostrarArquivo();
+?>
+<br>
+  <!--PHP Operators--> 
+<?php
+$a = 50;  
+$b = 25;
+
+if ($a > $b && $b != 0) {
+    echo "Condição satisfeita!";
+}
+?>
+<br>
+    <!--PHP if Statements--> 
+<?php
+$hora = 15;
+
+if ($hora < 12) {
+  echo "Bom dia!";
+} elseif ($hora < 18) {
+  echo "Boa tarde!";
+} else {
+  echo "Boa noite!";
+}
+?>
+<br>
+    <!--PHP SWITCH-->
+<?php
+$idioma = "português";
+
+switch ($idioma) {
+  case "inglês":
+    echo "Você escolheu inglês.";
+    break;
+  case "espanhol":
+    echo "Você escolheu espanhol.";
+    break;
+  case "português":
+    echo "Você escolheu português.";
+    break;
+  default:
+    echo "Idioma não reconhecido.";
+}
+?>
+<br>
+    <!--PHP Loops-->
+<?php
+$contador = 1;
+while ($contador <= 3) {
+  echo "Número: $contador<br>";
+  $contador++;
+}
+?>
+<br>
+    <!--PHP Functions--> 
+<?php
+function mensagemBoasVindas($nome) {
+    echo "Seja bem-vindo, $nome!";
+}
+mensagemBoasVindas("João");
+?>
+<br>
+  <!--PHP Arrays--> 
+<?php
+$animais = array("Cachorro", "Gato", "Pássaro");
+echo "Você tem " . count($animais) . " animais cadastrados.";
+?>
+</body>
+</html>
